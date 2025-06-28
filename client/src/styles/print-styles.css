@@ -1,0 +1,38 @@
+/* 印刷用スタイル - client/src/styles/print-styles.css */
+
+@media print {
+    .pdf-page {
+      width: 297mm !important;
+      height: 210mm !important;
+      margin: 0 !important;
+      padding: 15mm !important;
+      box-shadow: none !important;
+      border: none !important;
+      border-radius: 0 !important;
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+  
+    .pdf-page:last-child {
+      page-break-after: avoid;
+    }
+  
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+  
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }

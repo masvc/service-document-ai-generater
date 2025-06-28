@@ -1,6 +1,6 @@
 {
   "name": "wp-maker",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "workspaces": [
     "client",
@@ -9,9 +9,44 @@
   "scripts": {
     "client": "cd client && npm run dev",
     "server": "cd server && npm run start:dev",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "start": "concurrently \"npm run start:server\" \"npm run serve:client\"",
+    "start:server": "cd server && npm run start:prod",
+    "serve:client": "cd client && npm run preview",
+    "analyze": "cd client && npm run build:analyze",
+    "clean": "rm -rf client/dist server/dist",
+    "install:all": "npm install && npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
-  }
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.3",
+    "react-quill": "^2.0.0",
+    "recharts": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/wp-maker.git"
+  },
+  "keywords": [
+    "whitepaper",
+    "generator",
+    "pdf",
+    "react",
+    "typescript",
+    "claude-ai"
+  ],
+  "author": "Your Organization",
+  "license": "MIT"
 }

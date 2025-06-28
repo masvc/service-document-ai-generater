@@ -48,3 +48,15 @@ out/
 # Pythonがある場合
 __pycache__/
 *.py[cod]
+
+# Environment files
+.env
+.env.local
+.env.save
+.env.backup
+*.env
+
+# API Keys
+**/CLAUDE_API_KEY
+**/*api_key*
+
