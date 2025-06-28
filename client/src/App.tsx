@@ -18,7 +18,7 @@ const TEMPLATES = {
     title: '飲食店向けデジタル変革による次世代ビジネス戦略',
     subtitle: '競合優位性確立のための包括的アプローチ',
     company: '株式会社Example',
-    summary: '本ホワイトペーパーでは、飲食業界のデジタル変革について分析し、効率化と収益向上を実現するための具体的な手法を提示します。',
+    summary: '本サービス資料では、飲食業界のデジタル変革について分析し、効率化と収益向上を実現するための具体的な手法を提示します。',
     analysis: '国内外食産業の市場規模は約26兆円で、デリバリー市場は前年比120%成長を記録\n人材不足と人件費上昇が深刻な課題\n顧客行動のデジタルシフトが加速',
     solution: 'クラウドベースPOSシステムの導入による業務効率化\nAIによる需要予測と自動発注システムの実装\nオムニチャネル対応によるカスタマーエクスペリエンス向上',
     conclusion: 'デジタル変革は飲食業界における競争優位性確保の必須要件となっている。適切な戦略立案と段階的な実装により、収益性向上と持続可能な成長の実現が可能である。'
@@ -80,7 +80,7 @@ function WhitepaperGenerator() {
   const generateWithClaude = async () => {
     setIsGeneratingWithClaude(true);
     try {
-      const prompt = `以下のテーマでビジネス向けホワイトペーパーのコンテンツを生成してください：
+      const prompt = `以下のテーマでビジネス向けサービス資料のコンテンツを生成してください：
 
 テーマ: ${formData.title}
 対象業界: ${formData.company}
@@ -154,7 +154,7 @@ function WhitepaperGenerator() {
         <!DOCTYPE html>
         <html>
           <head>
-            <title>whitepaper_${formData.title.replace(/[^a-zA-Z0-9]/g, '_')}</title>
+            <title>service_document_${formData.title.replace(/[^a-zA-Z0-9]/g, '_')}</title>
             <meta charset="utf-8">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -249,7 +249,7 @@ function WhitepaperGenerator() {
             color: '#1f2937',
             fontWeight: '700'
           }}>
-            📄 プロフェッショナル ホワイトペーパー生成ツール v2.0
+            📄 プロフェッショナル サービス資料生成ツール v2.0
           </h1>
           
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>

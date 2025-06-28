@@ -70,7 +70,7 @@ export const CoverPage: React.FC<CoverPageProps> = ({ data, theme }) => {
               letterSpacing: '0.5px',
               textTransform: 'uppercase'
             }}>
-              Whitepaper · {new Date().toLocaleDateString('ja-JP', {
+              Service Document · {new Date().toLocaleDateString('ja-JP', {
                 year: 'numeric',
                 month: '2-digit',
                 day: '2-digit'
@@ -177,7 +177,7 @@ export const CoverPage: React.FC<CoverPageProps> = ({ data, theme }) => {
                 color: '#374151',
                 fontWeight: '600'
               }}>
-                Business Strategy Whitepaper
+                Business Strategy Document
               </div>
             </div>
 

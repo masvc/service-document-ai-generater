@@ -407,7 +407,7 @@ export const ServicePage: React.FC<ServicePageProps> = ({ data, theme }) => {
             color: '#9ca3af',
             fontWeight: '500'
           }}>
-            Professional Whitepaper Generator v2.0
+            Professional Service Document Generator v2.0
           </div>
           
           <div style={{

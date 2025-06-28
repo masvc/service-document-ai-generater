@@ -90,7 +90,7 @@ export const A4Page: React.FC<A4PageProps> = ({
           color: theme.text,
           fontWeight: '500'
         }}>
-          Professional Whitepaper Generator v2.0
+          Professional Service Document Generator v2.0
         </div>
         
         {showPageNumber && pageNumber && (

@@ -36,7 +36,7 @@ export class ClaudeService {
             messages: [
               {
                 role: 'user',
-                content: `以下の内容をホワイトペーパー用に整形してください：\n\n${prompt}`,
+                content: `以下の内容をサービス資料用に整形してください：\n\n${prompt}`,
               },
             ],
           },

@@ -151,7 +151,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ data, theme }) => {
                 lineHeight: '1.6',
                 marginBottom: '16px'
               }}>
-                本ホワイトペーパーの内容について、より詳細なご相談や
+                本サービス資料の内容について、より詳細なご相談や
                 個別のお打ち合わせをご希望の場合は、お気軽にお問い合わせください。
               </div>
             </div>
