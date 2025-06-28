@@ -1,0 +1,50 @@
+# OS固有
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 環境ファイル
+.env
+.env.*.local
+
+# ログ
+logs/
+*.log
+
+# テストのカバレッジ
+coverage/
+
+# ビルド成果物
+dist/
+build/
+out/
+
+# エディタ・IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Macのバインディングファイル
+*.DS_Store
+
+# その他
+*.local
+*.cache
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# Pythonがある場合
+__pycache__/
+*.py[cod]
